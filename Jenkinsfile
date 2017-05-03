@@ -3,6 +3,8 @@ node('android') {
     checkout scm
 
     stage 'Build'
+    sh "whoami"
+    sh "pwd"
     sh "./gradlew clean assembleDebug --debug"
 
     stage 'Archive'
