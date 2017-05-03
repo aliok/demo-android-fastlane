@@ -5,6 +5,7 @@ node('android') {
     stage 'Build'
     sh "whoami"
     sh "pwd"
+    sh "id"
     sh "./gradlew clean assembleDebug --debug"
 
     stage 'Archive'
